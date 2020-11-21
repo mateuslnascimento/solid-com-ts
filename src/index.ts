@@ -1,7 +1,12 @@
-import ShareButton from './ShareButton';
+import ShareButtonTwitter from './ShareButtonTwitter';
+import ShareButtonFacebook from './ShareButtonFacebook';
+import ShareButtonLinkedin from './ShareButtonLinkedin';
 
-const shareButton = new ShareButton('https://github.com/mateuslnascimento');
+const twitter = new ShareButtonTwitter('.btn-twitter', 'https://github.com/mateuslnascimento');
+twitter.bind();
 
-shareButton.bind('.btn-twitter', 'twitter');
-shareButton.bind('.btn-facebook', 'facebook');
-shareButton.bind('.btn-linkedin', 'linkedin');
+const facebook = new ShareButtonFacebook('.btn-facebook', 'https://github.com/mateuslnascimento');
+facebook.bind();
+
+const linkedin = new ShareButtonLinkedin('.btn-linkedin', 'https://github.com/mateuslnascimento');
+linkedin.bind();
