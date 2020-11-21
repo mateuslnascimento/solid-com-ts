@@ -12,5 +12,5 @@ facebook.bind();
 const linkedin = new ShareButtonLinkedin('.btn-linkedin', 'https://github.com/mateuslnascimento');
 linkedin.bind();
 
-const print = new ShareButtonPrint('.btn-print', 'https://github.com/mateuslnascimento');
+const print = new ShareButtonPrint('.btn-print');
 print.bind();
